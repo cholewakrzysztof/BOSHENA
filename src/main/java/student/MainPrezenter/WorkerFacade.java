@@ -3,7 +3,7 @@ package student.MainPrezenter;
 import OrdersApiModel.OrdersApiModel.IDeviceModel;
 import OrdersApiModel.OrdersApiModel.IOrderModel;
 
-public class WorkerFacade implements IOrderFacade {
+public class WorkerFacade implements IWorkerFacade {
 
 	private MainPrezenter.WorkerService workerService;
 
