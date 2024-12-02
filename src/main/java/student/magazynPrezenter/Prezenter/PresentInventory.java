@@ -23,7 +23,7 @@ public class PresentInventory {
 	 * @param partID
 	 */
 	public ItemModel ShowPart(int partID) {
-		// TODO - implement PresentInventory.ShowPart
+
 		throw new UnsupportedOperationException();
 	}
 

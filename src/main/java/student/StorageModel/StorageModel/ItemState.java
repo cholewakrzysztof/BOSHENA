@@ -9,6 +9,10 @@ public class ItemState implements IItemState {
 	public ItemState() {
 		iItemModel = new ItemModel();
 	}
+	
+	public ItemState(int itemID){
+		iItemModel = new ItemModel();
+	}
 
 	public void InsertItem() {
 		// TODO - implement ItemState.InsertItem
