@@ -1,6 +1,7 @@
 package student.WorkersApiPrezenter.WorkersApi;
 
 import student.WorkerApiModel.IWorkerState;
+import student.WorkerApiModel.WorkersApiModel.IWorkerModel;
 
 public class WorkersService {
 
@@ -11,7 +12,7 @@ public class WorkersService {
 	 * 
 	 * @param IWorkerModel
 	 */
-	public WorkerApiModel.WorkersApiModel.IWorkerModel CreateNewWorker(int IWorkerModel) {
+	public IWorkerModel CreateNewWorker(int IWorkerModel) {
 		// TODO - implement WorkersService.CreateNewWorker
 		throw new UnsupportedOperationException();
 	}
@@ -20,7 +21,7 @@ public class WorkersService {
 	 * 
 	 * @param Id
 	 */
-	public WorkerApiModel.WorkersApiModel.IWorkerModel GetWorker(int Id) {
+	public IWorkerModel GetWorker(int Id) {
 		// TODO - implement WorkersService.GetWorker
 		throw new UnsupportedOperationException();
 	}

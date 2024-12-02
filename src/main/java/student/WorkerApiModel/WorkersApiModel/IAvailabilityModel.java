@@ -1,4 +1,4 @@
-package WorkerApiModel.WorkersApiModel;
+package student.WorkerApiModel.WorkersApiModel;
 
 public interface IAvailabilityModel {
 }

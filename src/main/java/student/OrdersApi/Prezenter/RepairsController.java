@@ -1,6 +1,7 @@
 package student.OrdersApi.Prezenter;
 
 import student.OrdersApi.IRepairsClient;
+import student.OrdersApiModel.OrdersApiModel.IDeviceModel;
 
 public class RepairsController implements IRepairsClient {
 
@@ -8,7 +9,7 @@ public class RepairsController implements IRepairsClient {
 	 * 
 	 * @param device
 	 */
-	public int CreateDevice(OrdersApiModel.OrdersApiModel.IDeviceModel device) {
+	public int CreateDevice(IDeviceModel device) {
 		// TODO - implement RepairsController.CreateDevice
 		throw new UnsupportedOperationException();
 	}

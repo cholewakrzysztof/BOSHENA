@@ -1,17 +1,19 @@
 package student.OrdersApi;
 
+import student.OrdersApiModel.OrdersApiModel.IRepairModel;
+
 public interface IRepairState {
 
 	/**
 	 * 
 	 * @param repair
 	 */
-	boolean InsertRepair(OrdersApi.Prezenter.IRepairModel repair);
+	boolean InsertRepair(IRepairModel repair);
 
 	/**
 	 * 
 	 * @param repair
 	 */
-	int UpdateRepair(OrdersApi.Prezenter.IRepairModel repair);
+	int UpdateRepair(IRepairModel repair);
 
 }

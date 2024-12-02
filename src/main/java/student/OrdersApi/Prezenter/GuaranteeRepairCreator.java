@@ -1,8 +1,7 @@
 package student.OrdersApi.Prezenter;
 
-import OrdersApiModel.OrdersApiModel.IDeviceModel;
-import OrdersApiModel.OrdersApiModel.IRepairModel;
 import student.OrdersApi.Prezenter.IRepairCreator;
+import student.OrdersApiModel.OrdersApiModel.IDeviceModel;
 
 public class GuaranteeRepairCreator implements IRepairCreator {
     @Override

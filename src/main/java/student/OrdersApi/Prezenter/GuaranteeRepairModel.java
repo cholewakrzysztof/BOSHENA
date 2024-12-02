@@ -1,4 +1,6 @@
-package OrdersApi.Prezenter;
+package student.OrdersApi.Prezenter;
 
-public class GuaranteeRepairModel extends IRepairModel {
+import student.OrdersApiModel.OrdersApiModel.IRepairModel;
+
+public class GuaranteeRepairModel implements IRepairModel {
 }

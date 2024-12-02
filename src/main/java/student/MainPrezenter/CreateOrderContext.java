@@ -1,6 +1,8 @@
 package student.MainPrezenter;
 
 import student.MainPrezenter.ICreateOrderStrategy;
+import student.OrdersApiModel.OrdersApiModel.IDeviceModel;
+import student.OrdersApiModel.OrdersApiModel.IOrderModel;
 
 public class CreateOrderContext {
 
@@ -13,7 +15,7 @@ public class CreateOrderContext {
 	 * @param workerId
 	 * @param clientId
 	 */
-	public OrdersApiModel.OrdersApiModel.IOrderModel CreateOrder(OrdersApiModel.OrdersApiModel.IDeviceModel device, OrdersApiModel.OrdersApiModel.IOrderModel order, int workerId, int clientId) {
+	public IOrderModel CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId) {
 		// TODO - implement CreateOrderContext.CreateOrder
 		throw new UnsupportedOperationException();
 	}
@@ -23,8 +25,7 @@ public class CreateOrderContext {
 	 * @param strategy
 	 */
 	public void SetStrategy(ICreateOrderStrategy strategy) {
-		// TODO - implement CreateOrderContext.SetStrategy
-		throw new UnsupportedOperationException();
+		this.strategy = strategy;
 	}
 
 }

@@ -1,8 +1,16 @@
 package student.OrdersApiModel.OrdersApiModel;
 
-public class DeviceModel implements OrdersApiModel.OrdersApiModel.IDeviceModel {
+import java.util.concurrent.locks.Condition;
+
+public class DeviceModel implements IDeviceModel {
 
 	private String Mark;
 	private DeviceCondition Condition;
 	private String Comment;
+
+	public DeviceModel(String mark, DeviceCondition condition, String comment) {
+		this.Comment = comment;
+		this.Condition = condition;
+		this.Mark = mark;
+	}
 }

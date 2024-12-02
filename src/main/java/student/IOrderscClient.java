@@ -1,11 +1,13 @@
 package student;
 
+import student.OrdersApiModel.OrdersApiModel.IOrderModel;
+
 public interface IOrderscClient {
 
 	/**
 	 * 
 	 * @param order
 	 */
-	int CreateOrder(OrdersApiModel.OrdersApiModel.IOrderModel order);
+	int CreateOrder(IOrderModel order);
 
 }

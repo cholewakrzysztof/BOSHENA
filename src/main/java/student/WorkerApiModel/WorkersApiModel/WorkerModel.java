@@ -1,4 +1,5 @@
-package WorkerApiModel.WorkersApiModel;
+package student.WorkerApiModel.WorkersApiModel;
+
 
 public class WorkerModel implements IWorkerModel {
 

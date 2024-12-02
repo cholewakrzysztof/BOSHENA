@@ -1,5 +1,7 @@
 package student.OrdersApi.Prezenter;
 
+import student.OrdersApiModel.OrdersApiModel.IOrderModel;
+
 public class OrderService {
 
 	private IOrderCreation orderCreationChain;
@@ -8,7 +10,7 @@ public class OrderService {
 	 * 
 	 * @param order
 	 */
-	public int CreateOrder(OrdersApiModel.OrdersApiModel.IOrderModel order) {
+	public int CreateOrder(IOrderModel order) {
 		// TODO - implement OrderService.CreateOrder
 		throw new UnsupportedOperationException();
 	}
@@ -17,7 +19,7 @@ public class OrderService {
 	 * 
 	 * @param order
 	 */
-	public int UpdateOrder(OrdersApiModel.OrdersApiModel.IOrderModel order) {
+	public int UpdateOrder(IOrderModel order) {
 		// TODO - implement OrderService.UpdateOrder
 		throw new UnsupportedOperationException();
 	}

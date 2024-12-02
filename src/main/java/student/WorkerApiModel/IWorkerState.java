@@ -1,29 +1,31 @@
 package student.WorkerApiModel;
 
+import student.WorkerApiModel.WorkersApiModel.IWorkerModel;
+
 public interface IWorkerState {
 
 	/**
 	 * 
 	 * @param worker
 	 */
-	boolean InsertWorker(WorkerApiModel.WorkersApiModel.IWorkerModel worker);
+	boolean InsertWorker(IWorkerModel worker);
 
 	/**
 	 * 
 	 * @param worker
 	 */
-	int UpdateWorker(WorkerApiModel.WorkersApiModel.IWorkerModel worker);
+	int UpdateWorker(IWorkerModel worker);
 
 	/**
 	 * 
 	 * @param workerId
 	 */
-	WorkerApiModel.WorkersApiModel.IWorkerModel GetWorkerById(int workerId);
+	IWorkerModel GetWorkerById(int workerId);
 
 	/**
 	 * 
 	 * @param workerId
 	 */
-	WorkerApiModel.WorkersApiModel.IWorkerModel DeleteWorker(int workerId);
+	IWorkerModel DeleteWorker(int workerId);
 
 }

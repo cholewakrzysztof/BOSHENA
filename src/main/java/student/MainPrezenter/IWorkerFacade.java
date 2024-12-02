@@ -1,15 +1,19 @@
 package student.MainPrezenter;
-
+import student.WorkerApiModel.WorkersApiModel.IAvailabilityModel;
+import student.WorkerApiModel.WorkersApiModel.IWorkerModel;
 
 public interface IWorkerFacade {
 
 	/**
-	 * 
-	 * @param device
-	 * @param order
-	 * @param workerId
-	 * @param clientId
+	 *
+	 * @param worek
+	 * @param availability
 	 */
-	OrdersApiModel.OrdersApiModel.IOrderModel CreateOrder(OrdersApiModel.OrdersApiModel.IDeviceModel device, OrdersApiModel.OrdersApiModel.IOrderModel order, int workerId, int clientId);
+	boolean ChangeAvailability(IWorkerModel worek, IAvailabilityModel availability);
 
+	/**
+	 *
+	 * @param workerId
+	 */
+	IWorkerModel GetWorker(int workerId);
 }

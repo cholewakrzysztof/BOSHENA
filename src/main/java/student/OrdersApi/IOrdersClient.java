@@ -1,6 +1,8 @@
-package OrdersApi;
+package student.OrdersApi;
 
-import OrdersApiModel.OrdersApiModel.*;
+
+import student.OrdersApiModel.OrdersApiModel.IDeviceModel;
+import student.OrdersApiModel.OrdersApiModel.IOrderModel;
 
 public interface IOrdersClient {
 

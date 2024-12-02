@@ -1,12 +1,17 @@
 package student.MainPrezenter;
 
+import student.OrdersApiModel.OrdersApiModel.IDeviceModel;
+import student.OrdersApiModel.OrdersApiModel.IOrderModel;
+import student.WorkerApiModel.WorkersApiModel.IAvailabilityModel;
+import student.WorkerApiModel.WorkersApiModel.IWorkerModel;
+
 public class CreateOrderWithWorkerStrategy implements ICreateOrderStrategy {
 
 	/**
 	 * 
 	 * @param workerId
 	 */
-	private WorkerApiModel.WorkersApiModel.IWorkerModel GetWorker(int workerId) {
+	private IWorkerModel GetWorker(int workerId) {
 		// TODO - implement CreateOrderWithWorkerStrategy.GetWorker
 		throw new UnsupportedOperationException();
 	}
@@ -16,7 +21,7 @@ public class CreateOrderWithWorkerStrategy implements ICreateOrderStrategy {
 	 * @param worek
 	 * @param availability
 	 */
-	private boolean ChangeAvailability(WorkerApiModel.WorkersApiModel.IWorkerModel worek, WorkerApiModel.WorkersApiModel.IAvailabilityModel availability) {
+	private boolean ChangeAvailability(IWorkerModel worek, IAvailabilityModel availability) {
 		// TODO - implement CreateOrderWithWorkerStrategy.ChangeAvailability
 		throw new UnsupportedOperationException();
 	}
@@ -25,7 +30,7 @@ public class CreateOrderWithWorkerStrategy implements ICreateOrderStrategy {
 	 * 
 	 * @param order
 	 */
-	private WorkerApiModel.WorkersApiModel.IAvailabilityModel CreateAvailability(OrdersApiModel.OrdersApiModel.IOrderModel order) {
+	private IAvailabilityModel CreateAvailability(IOrderModel order) {
 		// TODO - implement CreateOrderWithWorkerStrategy.CreateAvailability
 		throw new UnsupportedOperationException();
 	}
@@ -37,9 +42,14 @@ public class CreateOrderWithWorkerStrategy implements ICreateOrderStrategy {
 	 * @param workerId
 	 * @param clientId
 	 */
-	public OrdersApiModel.OrdersApiModel.IOrderModel CreateOrder(OrdersApiModel.OrdersApiModel.IDeviceModel device, OrdersApiModel.OrdersApiModel.IOrderModel order, int workerId, int clientId) {
+	public IOrderModel CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId) {
 		// TODO - implement CreateOrderWithWorkerStrategy.CreateOrder
 		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public String ToString() {
+		return "Extend strategy";
 	}
 
 }

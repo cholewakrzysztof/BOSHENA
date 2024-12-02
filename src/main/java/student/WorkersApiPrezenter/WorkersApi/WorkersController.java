@@ -1,8 +1,8 @@
 package student.WorkersApiPrezenter.WorkersApi;
 
 
-import WorkerApiModel.WorkersApiModel.IAvailabilityModel;
-import WorkerApiModel.WorkersApiModel.IWorkerModel;
+import student.WorkerApiModel.WorkersApiModel.IAvailabilityModel;
+import student.WorkerApiModel.WorkersApiModel.IWorkerModel;
 import student.WorkersApiPrezenter.IWorkersClient;
 
 public class WorkersController implements IWorkersClient {
@@ -11,7 +11,7 @@ public class WorkersController implements IWorkersClient {
 	 * 
 	 * @param worker
 	 */
-	public WorkerApiModel.WorkersApiModel.IWorkerModel CreateNewWorker(WorkerApiModel.WorkersApiModel.IWorkerModel worker) {
+	public IWorkerModel CreateNewWorker(IWorkerModel worker) {
 		// TODO - implement WorkersController.CreateNewWorker
 		throw new UnsupportedOperationException();
 	}
@@ -27,7 +27,7 @@ public class WorkersController implements IWorkersClient {
 	}
 
 	@Override
-	public boolean ChangeAvailability(IWorkerModel worek, IAvailabilityModel availability) {
+	public boolean ChangeAvailability(student.WorkerApiModel.WorkersApiModel.IWorkerModel worek, student.WorkerApiModel.WorkersApiModel.IAvailabilityModel availability) {
 		return false;
 	}
 

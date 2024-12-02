@@ -1,4 +1,8 @@
-import WorkerApiModel.WorkersApiModel.*;
+package student;
+
+
+import student.WorkerApiModel.WorkersApiModel.IAvailabilityModel;
+import student.WorkerApiModel.WorkersApiModel.IWorkerModel;
 
 public interface IWorkersClient {
 

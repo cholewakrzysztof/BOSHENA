@@ -1,18 +1,21 @@
 package student;
 
+import student.WorkerApiModel.WorkersApiModel.IAvailabilityModel;
+import student.WorkerApiModel.WorkersApiModel.IWorkerModel;
+
 public interface IWorkerClient {
 
 	/**
 	 * 
 	 * @param workerId
 	 */
-	WorkerApiModel.WorkersApiModel.IWorkerModel GetWorker(int workerId);
+	IWorkerModel GetWorker(int workerId);
 
 	/**
 	 * 
 	 * @param workerId
 	 * @param availability
 	 */
-	boolean UpdateWorkerAvailability(int workerId, WorkerApiModel.WorkersApiModel.IAvailabilityModel availability);
+	boolean UpdateWorkerAvailability(int workerId, IAvailabilityModel availability);
 
 }

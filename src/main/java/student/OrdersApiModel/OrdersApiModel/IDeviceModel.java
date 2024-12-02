@@ -1,4 +1,4 @@
-package OrdersApiModel.OrdersApiModel;
+package student.OrdersApiModel.OrdersApiModel;
 
 public interface IDeviceModel {
 }

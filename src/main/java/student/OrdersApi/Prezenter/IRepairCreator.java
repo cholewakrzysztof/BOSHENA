@@ -1,11 +1,13 @@
 package student.OrdersApi.Prezenter;
 
+import student.OrdersApiModel.OrdersApiModel.IDeviceModel;
+
 public interface IRepairCreator {
 
 	/**
 	 * 
 	 * @param device
 	 */
-	OrdersApiModel.OrdersApiModel.IRepairModel CreateRepair(OrdersApiModel.OrdersApiModel.IDeviceModel device);
+	IRepairModel CreateRepair(IDeviceModel device);
 
 }

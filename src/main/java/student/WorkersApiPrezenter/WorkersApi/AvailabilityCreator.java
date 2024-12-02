@@ -1,8 +1,10 @@
 package student.WorkersApiPrezenter.WorkersApi;
 
+import student.WorkerApiModel.WorkersApiModel.IAvailabilityModel;
+
 public class AvailabilityCreator {
 
-	public WorkerApiModel.WorkersApiModel.IAvailabilityModel CreateNewAvailability() {
+	public IAvailabilityModel CreateNewAvailability() {
 		// TODO - implement AvailabilityCreator.CreateNewAvailability
 		throw new UnsupportedOperationException();
 	}

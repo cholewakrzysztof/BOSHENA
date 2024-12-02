@@ -7,7 +7,7 @@ import java.sql.Connection;
 
 public class WorkerState implements IWorkerState, State {
 
-	private WorkerApiModel.WorkersApiModel.IWorkerModel[] Workers;
+	private IWorkerModel[] Workers;
 
 	public WorkerState GetState() {
 		// TODO - implement WorkerState.GetState
@@ -20,22 +20,22 @@ public class WorkerState implements IWorkerState, State {
 	}
 
 	@Override
-	public boolean InsertWorker(WorkerApiModel.WorkersApiModel.IWorkerModel worker) {
+	public boolean InsertWorker(IWorkerModel worker) {
 		return false;
 	}
 
 	@Override
-	public int UpdateWorker(WorkerApiModel.WorkersApiModel.IWorkerModel worker) {
+	public int UpdateWorker(IWorkerModel worker) {
 		return 0;
 	}
 
 	@Override
-	public WorkerApiModel.WorkersApiModel.IWorkerModel GetWorkerById(int workerId) {
+	public IWorkerModel GetWorkerById(int workerId) {
 		return null;
 	}
 
 	@Override
-	public WorkerApiModel.WorkersApiModel.IWorkerModel DeleteWorker(int workerId) {
+	public IWorkerModel DeleteWorker(int workerId) {
 		return null;
 	}
 

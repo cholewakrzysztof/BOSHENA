@@ -2,7 +2,7 @@ package student.OrdersApiModel.OrdersApiModel;
 
 import java.util.Date;
 
-public class RepairModel implements OrdersApiModel.OrdersApiModel.IRepairModel {
+public class RepairModel implements IRepairModel {
 
 	private DevicePart[] Fixed;
 	private DevicePart[] Broken;

@@ -1,7 +1,8 @@
-package OrdersApi.Prezenter;
+package student.OrdersApi.Prezenter;
 
-import OrdersApi.*;
-import OrdersApiModel.OrdersApiModel.*;
+import student.OrdersApi.IOrdersClient;
+import student.OrdersApiModel.OrdersApiModel.IDeviceModel;
+import student.OrdersApiModel.OrdersApiModel.IOrderModel;
 
 public class OrdersController implements IOrdersClient {
 

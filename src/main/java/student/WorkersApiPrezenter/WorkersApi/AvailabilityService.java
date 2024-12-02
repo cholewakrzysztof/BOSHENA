@@ -1,6 +1,7 @@
 package student.WorkersApiPrezenter.WorkersApi;
 
 import student.WorkerApiModel.IAvailabilityState;
+import student.WorkerApiModel.WorkersApiModel.IAvailabilityModel;
 
 public class AvailabilityService {
 
@@ -11,7 +12,7 @@ public class AvailabilityService {
 	 * 
 	 * @param IAvailabilityModel
 	 */
-	private WorkerApiModel.WorkersApiModel.IAvailabilityModel CreateNewAvailability(int IAvailabilityModel) {
+	private IAvailabilityModel CreateNewAvailability(int IAvailabilityModel) {
 		// TODO - implement AvailabilityService.CreateNewAvailability
 		throw new UnsupportedOperationException();
 	}
@@ -21,7 +22,7 @@ public class AvailabilityService {
 	 * @param WorkerId
 	 * @param availability
 	 */
-	public boolean ChangeAvailability(int WorkerId, WorkerApiModel.WorkersApiModel.IAvailabilityModel availability) {
+	public boolean ChangeAvailability(int WorkerId, IAvailabilityModel availability) {
 		// TODO - implement AvailabilityService.ChangeAvailability
 		throw new UnsupportedOperationException();
 	}

@@ -1,6 +1,5 @@
 package student.WorkerApiModel.WorkersApiModel;
 
-import WorkerApiModel.WorkersApiModel.IAvailabilityModel;
 import student.OrdersApiModel.OrdersApiModel.State;
 import student.WorkerApiModel.IAvailabilityState;
 
@@ -8,7 +7,7 @@ import java.sql.Connection;
 
 public class AvailabilityState implements IAvailabilityState, State {
 
-	private WorkerApiModel.WorkersApiModel.IAvailabilityModel[] Availabilities;
+	private IAvailabilityModel[] Availabilities;
 
 
 	@Override

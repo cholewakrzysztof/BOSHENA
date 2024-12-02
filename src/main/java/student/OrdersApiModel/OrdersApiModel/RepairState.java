@@ -1,6 +1,5 @@
 package student.OrdersApiModel.OrdersApiModel;
 
-import OrdersApi.Prezenter.IRepairModel;
 import student.OrdersApi.IRepairState;
 import student.OrdersApiModel.OrdersApiModel.State;
 

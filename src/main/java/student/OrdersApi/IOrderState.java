@@ -1,28 +1,30 @@
 package student.OrdersApi;
 
+import student.OrdersApiModel.OrdersApiModel.IOrderModel;
+
 public interface IOrderState {
 
 	/**
 	 * 
 	 * @param order
 	 */
-	boolean InsertOrder(OrdersApiModel.OrdersApiModel.IOrderModel order);
+	boolean InsertOrder(IOrderModel order);
 
 	/**
 	 * 
 	 * @param order
 	 */
-	int UpdateOrder(OrdersApiModel.OrdersApiModel.IOrderModel order);
+	int UpdateOrder(IOrderModel order);
 
 	/**
 	 * 
 	 * @param orderId
 	 */
-	OrdersApiModel.OrdersApiModel.IOrderModel GetOrderById(int orderId);
+	IOrderModel GetOrderById(int orderId);
 
 	/**
 	 * 
 	 * @param orderId
 	 */
-	OrdersApiModel.OrdersApiModel.IOrderModel DeleteOrder(int orderId);
+	IOrderModel DeleteOrder(int orderId);
 }

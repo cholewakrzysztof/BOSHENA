@@ -1,26 +1,25 @@
 package student.MainPrezenter;
 
 
-import WorkerApiModel.WorkersApiModel.IAvailabilityModel;
-import WorkerApiModel.WorkersApiModel.IWorkerModel;
+import student.OrdersApiModel.OrdersApiModel.IDeviceModel;
+import student.OrdersApiModel.OrdersApiModel.IOrderModel;
 
 public class OrderFacade implements IOrderFacade {
 
-	private OrderCreation OrderCreation;
-
-
-	@Override
-	public boolean ChangeAvailability(IWorkerModel worek, IAvailabilityModel availability) {
-		return false;
-	}
+	private OrderCreation OrderCreation = new OrderCreation();
 
 	@Override
-	public IWorkerModel GetWorker(int workerId) {
-		return null;
-	}
+	public IOrderModel CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId) {
+		if (workerId < 1) {
+			System.out.println("Select strategy without worker\n");
+			ICreateOrderStrategy simpleStrategy = new CreateSimpleOrderStrategy();
+			OrderCreation.SetStrategy(simpleStrategy);
+		} else {
+			System.out.println("Select strategy without worker\n");
+			ICreateOrderStrategy extendStrategy = new CreateOrderWithWorkerStrategy();
+			OrderCreation.SetStrategy(extendStrategy);
+		}
 
-	@Override
-	public OrdersApiModel.OrdersApiModel.IOrderModel CreateOrder(OrdersApiModel.OrdersApiModel.IDeviceModel device, OrdersApiModel.OrdersApiModel.IOrderModel order, int workerId, int clientId) {
-		return null;
+		return OrderCreation.CreateOrder(device, order, workerId, clientId);
 	}
 }

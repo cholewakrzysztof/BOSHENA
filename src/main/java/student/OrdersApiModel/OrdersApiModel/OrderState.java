@@ -7,22 +7,22 @@ import java.sql.Connection;
 
 public class OrderState implements IOrderState, State {
     @Override
-    public boolean InsertOrder(OrdersApiModel.OrdersApiModel.IOrderModel order) {
+    public boolean InsertOrder(IOrderModel order) {
         return false;
     }
 
     @Override
-    public int UpdateOrder(OrdersApiModel.OrdersApiModel.IOrderModel order) {
+    public int UpdateOrder(IOrderModel order) {
         return 0;
     }
 
     @Override
-    public OrdersApiModel.OrdersApiModel.IOrderModel GetOrderById(int orderId) {
+    public IOrderModel GetOrderById(int orderId) {
         return null;
     }
 
     @Override
-    public OrdersApiModel.OrdersApiModel.IOrderModel DeleteOrder(int orderId) {
+    public IOrderModel DeleteOrder(int orderId) {
         return null;
     }
 
