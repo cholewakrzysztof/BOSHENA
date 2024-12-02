@@ -16,8 +16,7 @@ public class CreateOrderContext {
 	 * @param clientId
 	 */
 	public IOrderModel CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId) {
-		// TODO - implement CreateOrderContext.CreateOrder
-		throw new UnsupportedOperationException();
+		return this.strategy.CreateOrder(device, order, workerId, clientId);
 	}
 
 	/**

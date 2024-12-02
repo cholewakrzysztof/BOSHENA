@@ -10,12 +10,12 @@ public class OrderFacade implements IOrderFacade {
 
 	@Override
 	public IOrderModel CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId) {
-		if (workerId < 1) {
+		if (workerId > 0) {
 			System.out.println("Select strategy without worker\n");
 			ICreateOrderStrategy simpleStrategy = new CreateSimpleOrderStrategy();
 			OrderCreation.SetStrategy(simpleStrategy);
 		} else {
-			System.out.println("Select strategy without worker\n");
+			System.out.println("Select strategy with worker\n");
 			ICreateOrderStrategy extendStrategy = new CreateOrderWithWorkerStrategy();
 			OrderCreation.SetStrategy(extendStrategy);
 		}

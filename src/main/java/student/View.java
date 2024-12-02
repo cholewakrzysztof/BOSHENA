@@ -16,9 +16,15 @@ public class View {
 	private IOrderFacade orderFacade;
 	private IInventoryClient inventoryClient;
 
+	private DevicePart[] mockBrokenParts = new DevicePart[] { new DevicePart("BOSH", "1234", true)};
+	private DevicePart[] mockGoodParts = new DevicePart[] { new DevicePart("BOSH", "54321", false)};
+
+
 	private int[] mockRepairId = new int[] { 1, 2 };
-	private IDeviceModel mockDevice = new DeviceModel("Bosh", DeviceCondition.Used, "Zarysowane");
+	private IDeviceModel mockDeviceGuarantee = new DeviceModel("Bosh", DeviceCondition.New, "Wada fabryczna", true, 1, mockBrokenParts);
+	private IDeviceModel mockDeviceNormal = new DeviceModel("Bosh", DeviceCondition.Used, "Zarysowane", false, 2, mockGoodParts);
 	private IOrderModel mockOrder = new OrderModel(OrderStatus.accepted, 1,mockRepairId, new Date());
+
 
 	public View() {
 		workerFacade = new WorkerFacade();
@@ -26,7 +32,7 @@ public class View {
 	}
 
 	public void ExecuteUseCases() throws IOException {
-		System.out.printf("Wykonaj PU: \n");
+		System.out.printf("\n\nWykonaj PU: \n");
 		System.out.printf("PU4 stworzenie zlecenia naprawy bez przypisania serwisanta:          a\n");
 		System.out.printf("PU4 stworzenie zlecenia naprawy z przypisaniem serwisanta:          aa\n");
 		System.out.printf("PU21 przypisanie zlecenia serwisantowi:                              b\n");
@@ -34,16 +40,18 @@ public class View {
 
 		Scanner myObj = new Scanner(System.in);
 
-		System.out.println("Enter name, age and salary:");
 		String result = myObj.nextLine();
 
 		switch (result) {
 			case "a": {
-				this.orderFacade.CreateOrder(mockDevice, mockOrder,10,1);
+				this.orderFacade.CreateOrder(mockDeviceGuarantee, mockOrder,10,1);
+				this.orderFacade.CreateOrder(mockDeviceNormal, mockOrder,10,1);
+
 				break;
 			}
 			case "aa": {
-				this.orderFacade.CreateOrder(mockDevice, mockOrder,0,1);
+				this.orderFacade.CreateOrder(mockDeviceGuarantee, mockOrder,0,1);
+				this.orderFacade.CreateOrder(mockDeviceNormal, mockOrder,0,1);
 				break;
 			}
 			case "b": {

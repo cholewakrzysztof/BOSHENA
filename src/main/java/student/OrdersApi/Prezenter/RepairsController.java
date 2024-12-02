@@ -10,8 +10,8 @@ public class RepairsController implements IRepairsClient {
 	 * @param device
 	 */
 	public int CreateDevice(IDeviceModel device) {
-		// TODO - implement RepairsController.CreateDevice
-		throw new UnsupportedOperationException();
+		System.out.println("Create device success");
+		return 1;
 	}
 
 	/**
@@ -19,8 +19,8 @@ public class RepairsController implements IRepairsClient {
 	 * @param deviceId
 	 */
 	public int CreateRepair(int deviceId) {
-		// TODO - implement RepairsController.CreateRepair
-		throw new UnsupportedOperationException();
+		IRepairProvider provider = new RepairProvider();
+		return provider.CreateRepair(deviceId);
 	}
 
 }
