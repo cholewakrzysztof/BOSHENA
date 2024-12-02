@@ -1,10 +1,12 @@
 package student;
 
+
 import student.MainPrezenter.IOrderFacade;
 import student.MainPrezenter.IWorkerFacade;
 import student.MainPrezenter.OrderFacade;
 import student.MainPrezenter.WorkerFacade;
-import student.OrdersApiModel.OrdersApiModel.*;
+import student.StorageModel.StorageModel.ItemModel;
+import student.magazynPrezenter.Prezenter.InventoryControler;
 
 import java.io.IOException;
 import java.util.Date;
@@ -29,6 +31,7 @@ public class View {
 	public View() {
 		workerFacade = new WorkerFacade();
 		orderFacade = new OrderFacade();
+		inventoryClient = new InventoryControler();
 	}
 
 	public void ExecuteUseCases() throws IOException {
@@ -37,9 +40,18 @@ public class View {
 		System.out.printf("PU4 stworzenie zlecenia naprawy z przypisaniem serwisanta:          aa\n");
 		System.out.printf("PU21 przypisanie zlecenia serwisantowi:                              b\n");
 		System.out.printf("PU20 aktualizacja dostepnosci serwisanta:                            c\n");
+		System.out.printf("Wykonaj PU: \n");
+		System.out.printf("PU1: Podglad stanu calego magazynu:              a\n");
+		System.out.printf("PU2: Podglad stanu magazynowego wybranej czesci: b\n");
+		System.out.printf("PU9: Aktualizacja stanu magazynu:                c\n");
+		System.out.printf("PU10: Przywrocenie ostatniej wersji magazynu:    d\n");
+		System.out.printf("PU4 stworzenie zlecenia naprawy:                 e\n");
+		System.out.printf("PU21 przypisanie zlecenia serwisantowi:          f\n");
+		System.out.printf("PU20 aktualizacja dostepnosci serwisanta:        g\n");
 
 		Scanner myObj = new Scanner(System.in);
 
+		System.out.println("Enter name, age and salary:");
 		String result = myObj.nextLine();
 
 		switch (result) {
@@ -52,13 +64,31 @@ public class View {
 			case "aa": {
 				this.orderFacade.CreateOrder(mockDeviceGuarantee, mockOrder,0,1);
 				this.orderFacade.CreateOrder(mockDeviceNormal, mockOrder,0,1);
+				inventoryClient.ShowAll();
 				break;
 			}
 			case "b": {
+				System.out.println("Podaj id czesci: ");
+				Scanner partIDScanner = new Scanner(System.in);
+				int partID = partIDScanner.nextInt();
+				inventoryClient.ShowPart(partID);
+				System.out.println("PartID: " + partID + " Quantity: " + inventoryClient.ShowPart(partID).getQuantity());
 				break;
 			}
 			case "c": {
 				break;
+			}
+			case "d":{
+				break;
+			}
+			case "e":{
+
+			}
+			case "f":{
+
+			}
+			case "g":{
+
 			}
 			default: {
 				return;

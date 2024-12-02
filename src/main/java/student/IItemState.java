@@ -18,4 +18,5 @@ public interface IItemState {
 	int UpdateItem(IItemModel item);
 
 	ItemModel[] SelectItemsToDisplay();
+	ItemModel SelectItemsToDisplay(int partID);
 }

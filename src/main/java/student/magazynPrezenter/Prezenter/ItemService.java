@@ -1,11 +1,20 @@
 package student.magazynPrezenter.Prezenter;
 
+import student.IItemState;
 import student.StorageModel.StorageModel.ItemModel;
+import student.StorageModel.StorageModel.ItemState;
 
-public class ItemService {
+public class ItemService  {
 
 	private InventoryProcessor invProcessor;
 	private PresentInventory presentInventory;
+	private IItemState iItemState;
+
+	public ItemService(){
+		invProcessor = new InventoryProcessor();
+		presentInventory = new PresentInventory();
+		iItemState = new ItemState();
+	}
 
 	/**
 	 * 
@@ -22,8 +31,8 @@ public class ItemService {
 	}
 
 	public void ShowAll() {
-		// TODO - implement ItemService.ShowAll
-		throw new UnsupportedOperationException();
+		presentInventory.ShowAll();
+		//throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -31,8 +40,8 @@ public class ItemService {
 	 * @param partID
 	 */
 	public ItemModel ShowPart(int partID) {
-		// TODO - implement ItemService.ShowPart
-		throw new UnsupportedOperationException();
+		 return presentInventory.ShowPart(partID);
+		//throw new UnsupportedOperationException();
 	}
 
 	public void ApplyFilter() {

@@ -1,12 +1,21 @@
 package student.magazynPrezenter.Prezenter;
 
+import student.IItemState;
 import student.StorageModel.StorageModel.ItemModel;
+import student.StorageModel.StorageModel.ItemState;
+
+import java.util.Arrays;
 
 public class PresentInventory {
+	private IItemState itemState;
+
+	public PresentInventory() {
+		itemState = new ItemState();
+	}
 
 	public void ShowAll() {
-		// TODO - implement PresentInventory.ShowAll
-		throw new UnsupportedOperationException();
+		PrepareInventoryStateToDisplay();
+		//throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -14,8 +23,8 @@ public class PresentInventory {
 	 * @param partID
 	 */
 	public ItemModel ShowPart(int partID) {
-		// TODO - implement PresentInventory.ShowPart
-		throw new UnsupportedOperationException();
+		return itemState.SelectItemsToDisplay(partID);
+		//throw new UnsupportedOperationException();
 	}
 
 	public void ApplyFilter() {
@@ -24,8 +33,11 @@ public class PresentInventory {
 	}
 
 	private void PrepareInventoryStateToDisplay() {
-		// TODO - implement PresentInventory.PrepareInventoryStateToDisplay
-		throw new UnsupportedOperationException();
+		ItemModel[] itemStates = itemState.SelectItemsToDisplay();
+		for (int i = 0; i < itemStates.length; i++){
+			System.out.println("PartID : " + itemStates[i].getPartID() + " Quantity: " + itemStates[i].getQuantity());
+		}
+		//throw new UnsupportedOperationException();
 	}
 
 	private void PreparePartStateToDisplay() {
