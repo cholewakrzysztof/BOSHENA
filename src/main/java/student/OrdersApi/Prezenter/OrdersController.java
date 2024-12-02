@@ -14,8 +14,9 @@ public class OrdersController implements IOrdersClient {
 	 * @param clientId
 	 */
 	public IOrderModel CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId) {
-		// TODO - implement OrdersController.CreateOrder
-		throw new UnsupportedOperationException();
+		OrderService service = new OrderService();
+		service.CreateOrder(device, order, workerId, clientId);
+		return order;
 	}
 
 }

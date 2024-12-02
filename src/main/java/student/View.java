@@ -41,33 +41,33 @@ public class View {
 		System.out.printf("PU21 przypisanie zlecenia serwisantowi:                              b\n");
 		System.out.printf("PU20 aktualizacja dostepnosci serwisanta:                            c\n");
 		System.out.printf("Wykonaj PU: \n");
-		System.out.printf("PU1: Podglad stanu calego magazynu:              a\n");
-		System.out.printf("PU2: Podglad stanu magazynowego wybranej czesci: b\n");
-		System.out.printf("PU9: Aktualizacja stanu magazynu:                c\n");
-		System.out.printf("PU10: Przywrocenie ostatniej wersji magazynu:    d\n");
-		System.out.printf("PU4 stworzenie zlecenia naprawy:                 e\n");
-		System.out.printf("PU21 przypisanie zlecenia serwisantowi:          f\n");
-		System.out.printf("PU20 aktualizacja dostepnosci serwisanta:        g\n");
+		System.out.printf("PU1: Podglad stanu calego magazynu:              a1\n");
+		System.out.printf("PU2: Podglad stanu magazynowego wybranej czesci: b1\n");
+		System.out.printf("PU9: Aktualizacja stanu magazynu:                c1\n");
+		System.out.printf("PU10: Przywrocenie ostatniej wersji magazynu:    d1\n");
+		System.out.printf("PU4 stworzenie zlecenia naprawy:                 e1\n");
+		System.out.printf("PU21 przypisanie zlecenia serwisantowi:          f1\n");
+		System.out.printf("PU20 aktualizacja dostepnosci serwisanta:        g1\n");
 
 		Scanner myObj = new Scanner(System.in);
 
-		System.out.println("Enter name, age and salary:");
 		String result = myObj.nextLine();
 
 		switch (result) {
 			case "a": {
 				this.orderFacade.CreateOrder(mockDeviceGuarantee, mockOrder,10,1);
 				this.orderFacade.CreateOrder(mockDeviceNormal, mockOrder,10,1);
-
 				break;
 			}
 			case "aa": {
 				this.orderFacade.CreateOrder(mockDeviceGuarantee, mockOrder,0,1);
 				this.orderFacade.CreateOrder(mockDeviceNormal, mockOrder,0,1);
+				break;
+			} case "a1": {
 				inventoryClient.ShowAll();
 				break;
 			}
-			case "b": {
+			case "b1": {
 				System.out.println("Podaj id czesci: ");
 				Scanner partIDScanner = new Scanner(System.in);
 				int partID = partIDScanner.nextInt();

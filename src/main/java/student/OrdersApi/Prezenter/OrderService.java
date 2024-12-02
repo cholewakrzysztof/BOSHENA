@@ -1,7 +1,7 @@
 package student.OrdersApi.Prezenter;
 
+import student.OrdersApiModel.OrdersApiModel.IDeviceModel;
 import student.OrdersApiModel.OrdersApiModel.IOrderModel;
-
 public class OrderService {
 
 	private IOrderCreation orderCreationChain;
@@ -10,9 +10,9 @@ public class OrderService {
 	 * 
 	 * @param order
 	 */
-	public int CreateOrder(IOrderModel order) {
-		// TODO - implement OrderService.CreateOrder
-		throw new UnsupportedOperationException();
+	public int CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId) {
+		orderCreationChain = new CreateProcessor();
+		return 0;
 	}
 
 	/**
