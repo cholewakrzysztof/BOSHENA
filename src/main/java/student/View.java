@@ -27,9 +27,11 @@ public class View {
 		System.out.printf("Wykonaj PU: \n");
 		System.out.printf("PU1: Podglad stanu calego magazynu:              a\n");
 		System.out.printf("PU2: Podglad stanu magazynowego wybranej czesci: b\n");
-		System.out.printf("PU4 stworzenie zlecenia naprawy:                 c\n");
-		System.out.printf("PU21 przypisanie zlecenia serwisantowi:          d\n");
-		System.out.printf("PU20 aktualizacja dostepnosci serwisanta:        e\n");
+		System.out.printf("PU9: Aktualizacja stanu magazynu:                c\n");
+		System.out.printf("PU10: Przywrocenie ostatniej wersji magazynu:    d\n");
+		System.out.printf("PU4 stworzenie zlecenia naprawy:                 e\n");
+		System.out.printf("PU21 przypisanie zlecenia serwisantowi:          f\n");
+		System.out.printf("PU20 aktualizacja dostepnosci serwisanta:        g\n");
 
 		Scanner myObj = new Scanner(System.in);
 
@@ -42,10 +44,27 @@ public class View {
 				break;
 			}
 			case "b": {
+				System.out.println("Podaj id czesci: ");
+				Scanner partIDScanner = new Scanner(System.in);
+				int partID = partIDScanner.nextInt();
+				inventoryClient.ShowPart(partID);
+				System.out.println("PartID: " + partID + " Quantity: " + inventoryClient.ShowPart(partID).getQuantity());
 				break;
 			}
 			case "c": {
 				break;
+			}
+			case "d":{
+				break;
+			}
+			case "e":{
+
+			}
+			case "f":{
+
+			}
+			case "g":{
+
 			}
 			default: {
 				return;

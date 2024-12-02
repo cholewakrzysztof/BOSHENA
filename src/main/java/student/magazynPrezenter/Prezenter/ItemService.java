@@ -40,8 +40,8 @@ public class ItemService  {
 	 * @param partID
 	 */
 	public ItemModel ShowPart(int partID) {
-		// TODO - implement ItemService.ShowPart
-		throw new UnsupportedOperationException();
+		 return presentInventory.ShowPart(partID);
+		//throw new UnsupportedOperationException();
 	}
 
 	public void ApplyFilter() {

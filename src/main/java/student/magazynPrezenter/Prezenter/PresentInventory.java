@@ -23,8 +23,8 @@ public class PresentInventory {
 	 * @param partID
 	 */
 	public ItemModel ShowPart(int partID) {
-
-		throw new UnsupportedOperationException();
+		return itemState.SelectItemsToDisplay(partID);
+		//throw new UnsupportedOperationException();
 	}
 
 	public void ApplyFilter() {

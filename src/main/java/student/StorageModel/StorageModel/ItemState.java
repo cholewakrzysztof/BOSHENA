@@ -9,7 +9,7 @@ public class ItemState implements IItemState {
 	public ItemState() {
 		iItemModel = new ItemModel();
 	}
-	
+
 	public ItemState(int itemID){
 		iItemModel = new ItemModel();
 	}
@@ -32,6 +32,10 @@ public class ItemState implements IItemState {
 	@Override
 	public int UpdateItem(IItemModel item) {
 		return 0;
+	}
+
+	public ItemModel SelectItemsToDisplay(int partID){
+		return new ItemModel(partID, 5);
 	}
 
 	public ItemModel[] SelectItemsToDisplay() {
