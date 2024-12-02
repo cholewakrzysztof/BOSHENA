@@ -1,15 +1,17 @@
+package student;
+
 public interface IReplenishmentState {
 
 	/**
 	 * 
 	 * @param order
 	 */
-	bool InsertOrder(IIReplenishmentModel order);
+	boolean InsertOrder(StorageModel.StorageModel.IReplenishmentModel order);
 
 	/**
 	 * 
 	 * @param orderID
 	 */
-	bool DeleteOrder(int orderID);
+	boolean DeleteOrder(int orderID);
 
 }

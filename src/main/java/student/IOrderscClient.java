@@ -1,9 +1,11 @@
+package student;
+
 public interface IOrderscClient {
 
 	/**
 	 * 
 	 * @param order
 	 */
-	int CreateOrder(IOrderModel order);
+	int CreateOrder(OrdersApiModel.OrdersApiModel.IOrderModel order);
 
 }

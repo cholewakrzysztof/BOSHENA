@@ -1,16 +1,18 @@
+package student;
+
 public interface IWorkerClient {
 
 	/**
 	 * 
 	 * @param workerId
 	 */
-	IWorkerModel GetWorker(int workerId);
+	WorkerApiModel.WorkersApiModel.IWorkerModel GetWorker(int workerId);
 
 	/**
 	 * 
 	 * @param workerId
 	 * @param availability
 	 */
-	bool UpdateWorkerAvailability(int workerId, IAvailabilityModel availability);
+	boolean UpdateWorkerAvailability(int workerId, WorkerApiModel.WorkersApiModel.IAvailabilityModel availability);
 
 }

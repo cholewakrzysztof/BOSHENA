@@ -1,9 +1,11 @@
+package student;
+
 public interface ICustomersService {
 
 	/**
 	 * 
 	 * @param customerId
 	 */
-	ICustomerModel GetCustomer(string customerId);
+	ICustomerModel GetCustomer(String customerId);
 
 }

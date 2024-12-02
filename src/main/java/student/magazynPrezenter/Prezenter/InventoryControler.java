@@ -1,16 +1,16 @@
-package magazynPrezenter.Prezenter;
+package student.magazynPrezenter.Prezenter;
 
-import StorageModel.StorageModel.*;
+import student.IInventoryClient;
 
 public class InventoryControler implements IInventoryClient {
 
-	private ItemService itemService;
+	private magazynPrezenter.Prezenter.ItemService itemService;
 
 	/**
 	 * 
 	 * @param partsList
 	 */
-	public void UpdateData(ItemModel[] partsList) {
+	public void UpdateData(StorageModel.StorageModel.ItemModel[] partsList) {
 		// TODO - implement InventoryControler.UpdateData
 		throw new UnsupportedOperationException();
 	}
@@ -29,7 +29,7 @@ public class InventoryControler implements IInventoryClient {
 	 * 
 	 * @param partID
 	 */
-	public ItemModel ShowPart(int partID) {
+	public StorageModel.StorageModel.ItemModel ShowPart(int partID) {
 		// TODO - implement InventoryControler.ShowPart
 		throw new UnsupportedOperationException();
 	}
@@ -47,6 +47,11 @@ public class InventoryControler implements IInventoryClient {
 	public void DeleteReplenishmentOrder() {
 		// TODO - implement InventoryControler.DeleteReplenishmentOrder
 		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public void operation() {
+
 	}
 
 }

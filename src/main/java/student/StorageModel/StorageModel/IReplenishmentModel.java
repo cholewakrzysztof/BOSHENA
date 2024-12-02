@@ -1,4 +1,4 @@
-package StorageModel.StorageModel;
+package student.StorageModel.StorageModel;
 
 public interface IReplenishmentModel {
 
@@ -6,12 +6,12 @@ public interface IReplenishmentModel {
 	 * 
 	 * @param order
 	 */
-	bool InsertOrder(ReplenishmentModel order);
+	boolean InsertOrder(StorageModel.StorageModel.ReplenishmentModel order);
 
 	/**
 	 * 
 	 * @param orderID
 	 */
-	bool DeleteOrder(int orderID);
+	boolean DeleteOrder(int orderID);
 
 }

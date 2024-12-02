@@ -1,4 +1,4 @@
-package StorageModel.StorageModel;
+package student.StorageModel.StorageModel;
 
 public interface IItemModel {
 
@@ -6,14 +6,14 @@ public interface IItemModel {
 	 * 
 	 * @param item
 	 */
-	bool InsertItem(ItemModel item);
+	boolean InsertItem(StorageModel.StorageModel.ItemModel item);
 
 	/**
 	 * 
 	 * @param item
 	 */
-	int UpdateItem(ItemModel item);
+	int UpdateItem(StorageModel.StorageModel.ItemModel item);
 
-	ItemModel[] SelectItemsToDisplay();
+	StorageModel.StorageModel.ItemModel[] SelectItemsToDisplay();
 
 }

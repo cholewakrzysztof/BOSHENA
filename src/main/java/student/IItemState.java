@@ -1,4 +1,6 @@
-import StorageModel.StorageModel.*;
+package student;
+
+import student.StorageModel.StorageModel.IItemModel;
 
 public interface IItemState {
 
@@ -6,7 +8,7 @@ public interface IItemState {
 	 * 
 	 * @param item
 	 */
-	bool InsertItem(IItemModel item);
+	boolean InsertItem(IItemModel item);
 
 	/**
 	 * 
@@ -14,6 +16,5 @@ public interface IItemState {
 	 */
 	int UpdateItem(IItemModel item);
 
-	ItemModel[] SelectItemsToDisplay();
-
+	StorageModel.StorageModel.ItemModel[] SelectItemsToDisplay();
 }

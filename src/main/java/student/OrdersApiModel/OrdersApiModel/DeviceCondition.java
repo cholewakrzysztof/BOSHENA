@@ -1,8 +1,8 @@
-package OrdersApiModel.OrdersApiModel;
+package student.OrdersApiModel.OrdersApiModel;
 
 public enum DeviceCondition {
-	new,
-	new_used,
-	used,
-	bad
+	New,
+	New_used,
+	Used,
+	Bad
 }

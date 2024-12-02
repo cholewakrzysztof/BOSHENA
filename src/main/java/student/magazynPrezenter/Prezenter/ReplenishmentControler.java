@@ -1,6 +1,8 @@
-package magazynPrezenter.Prezenter;
+package student.magazynPrezenter.Prezenter;
 
-public class ReplenishmentControler implements IReplenishment {
+import student.StorageModel.StorageModel.IReplenishmentModel;
+
+public class ReplenishmentControler implements IReplenishmentModel {
 
 	public void CreateReplenishmentOrder() {
 		// TODO - implement ReplenishmentControler.CreateReplenishmentOrder
@@ -12,4 +14,13 @@ public class ReplenishmentControler implements IReplenishment {
 		throw new UnsupportedOperationException();
 	}
 
+	@Override
+	public boolean InsertOrder(StorageModel.StorageModel.ReplenishmentModel order) {
+		return false;
+	}
+
+	@Override
+	public boolean DeleteOrder(int orderID) {
+		return false;
+	}
 }
