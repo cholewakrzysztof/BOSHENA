@@ -1,4 +1,6 @@
-package StorageModel.StorageModel;
+package student.StorageModel.StorageModel;
+
+import student.IReplenishmentState;
 
 public class ReplenishmentState implements IReplenishmentState {
 
@@ -12,4 +14,13 @@ public class ReplenishmentState implements IReplenishmentState {
 		throw new UnsupportedOperationException();
 	}
 
+	@Override
+	public boolean InsertOrder(IReplenishmentModel order) {
+		return false;
+	}
+
+	@Override
+	public boolean DeleteOrder(int orderID) {
+		return false;
+	}
 }

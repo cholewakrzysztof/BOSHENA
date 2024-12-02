@@ -1,9 +1,8 @@
-package OrdersApiModel.OrdersApiModel;
+package student.OrdersApiModel.OrdersApiModel;
 
-public class DeviceModel implements IDeviceModel {
+public class DeviceModel implements OrdersApiModel.OrdersApiModel.IDeviceModel {
 
-	private string Mark;
+	private String Mark;
 	private DeviceCondition Condition;
-	private string Comment;
-
+	private String Comment;
 }

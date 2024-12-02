@@ -1,4 +1,4 @@
-package OrdersApi;
+package student.OrdersApi;
 
 public interface IRepairsClient {
 
@@ -6,7 +6,7 @@ public interface IRepairsClient {
 	 * 
 	 * @param device
 	 */
-	int CreateDevice(IDeviceModel device);
+	int CreateDevice(OrdersApiModel.OrdersApiModel.IDeviceModel device);
 
 	/**
 	 * 

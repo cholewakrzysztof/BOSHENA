@@ -1,6 +1,9 @@
-package WorkerApiModel.WorkersApiModel;
+package student.WorkerApiModel.WorkersApiModel;
 
-import WorkerApiModel.*;
+import student.OrdersApiModel.OrdersApiModel.State;
+import student.WorkerApiModel.IAvailabilityState;
+
+import java.sql.Connection;
 
 public class AvailabilityState implements IAvailabilityState, State {
 
@@ -10,7 +13,7 @@ public class AvailabilityState implements IAvailabilityState, State {
 	 * 
 	 * @param availability
 	 */
-	public bool InsertAvailability(IAvailabilityModel availability) {
+	public boolean InsertAvailability(WorkerApiModel.WorkersApiModel.IAvailabilityModel availability) {
 		// TODO - implement AvailabilityState.InsertAvailability
 		throw new UnsupportedOperationException();
 	}
@@ -24,4 +27,23 @@ public class AvailabilityState implements IAvailabilityState, State {
 		throw new UnsupportedOperationException();
 	}
 
+	@Override
+	public boolean InsertAvailability(WorkerApiModel.WorkersApiModel.IAvailabilityModel availability) {
+		return false;
+	}
+
+	@Override
+	public int UpdateAvailability(WorkerApiModel.WorkersApiModel.IAvailabilityModel availability) {
+		return 0;
+	}
+
+	@Override
+	public boolean Disconnect() {
+		return false;
+	}
+
+	@Override
+	public Connection Connect() {
+		return null;
+	}
 }

@@ -1,6 +1,4 @@
-package WorkerApiModel;
-
-import WorkerApiModel.WorkersApiModel.*;
+package student.WorkerApiModel;
 
 public interface IAvailabilityState {
 
@@ -8,12 +6,12 @@ public interface IAvailabilityState {
 	 * 
 	 * @param availability
 	 */
-	bool InsertAvailability(IAvailabilityModel availability);
+	boolean InsertAvailability(WorkerApiModel.WorkersApiModel.IAvailabilityModel availability);
 
 	/**
 	 * 
 	 * @param availability
 	 */
-	int UpdateAvailability(IAvailabilityModel availability);
+	int UpdateAvailability(WorkerApiModel.WorkersApiModel.IAvailabilityModel availability);
 
 }

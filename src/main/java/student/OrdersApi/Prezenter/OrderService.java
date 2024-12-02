@@ -1,4 +1,4 @@
-package OrdersApi.Prezenter;
+package student.OrdersApi.Prezenter;
 
 public class OrderService {
 
@@ -8,7 +8,7 @@ public class OrderService {
 	 * 
 	 * @param order
 	 */
-	public int CreateOrder(IOrderModel order) {
+	public int CreateOrder(OrdersApiModel.OrdersApiModel.IOrderModel order) {
 		// TODO - implement OrderService.CreateOrder
 		throw new UnsupportedOperationException();
 	}
@@ -17,7 +17,7 @@ public class OrderService {
 	 * 
 	 * @param order
 	 */
-	public int UpdateOrder(IOrderModel order) {
+	public int UpdateOrder(OrdersApiModel.OrdersApiModel.IOrderModel order) {
 		// TODO - implement OrderService.UpdateOrder
 		throw new UnsupportedOperationException();
 	}

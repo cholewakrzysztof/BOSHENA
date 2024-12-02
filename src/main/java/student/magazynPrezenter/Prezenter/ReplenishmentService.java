@@ -1,4 +1,4 @@
-package magazynPrezenter.Prezenter;
+package student.magazynPrezenter.Prezenter;
 
 public class ReplenishmentService {
 

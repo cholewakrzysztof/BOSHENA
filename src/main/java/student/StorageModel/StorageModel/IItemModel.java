@@ -6,14 +6,14 @@ public interface IItemModel {
 	 * 
 	 * @param item
 	 */
-	boolean InsertItem(StorageModel.StorageModel.ItemModel item);
+	boolean InsertItem(ItemModel item);
 
 	/**
 	 * 
 	 * @param item
 	 */
-	int UpdateItem(StorageModel.StorageModel.ItemModel item);
+	int UpdateItem(ItemModel item);
 
-	StorageModel.StorageModel.ItemModel[] SelectItemsToDisplay();
+	ItemModel[] SelectItemsToDisplay();
 
 }

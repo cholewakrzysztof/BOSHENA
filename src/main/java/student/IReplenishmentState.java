@@ -1,12 +1,14 @@
 package student;
 
+import student.StorageModel.StorageModel.IReplenishmentModel;
+
 public interface IReplenishmentState {
 
 	/**
 	 * 
 	 * @param order
 	 */
-	boolean InsertOrder(StorageModel.StorageModel.IReplenishmentModel order);
+	boolean InsertOrder(IReplenishmentModel order);
 
 	/**
 	 * 

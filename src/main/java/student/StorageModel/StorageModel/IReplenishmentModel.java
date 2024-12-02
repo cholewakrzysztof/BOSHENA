@@ -6,7 +6,7 @@ public interface IReplenishmentModel {
 	 * 
 	 * @param order
 	 */
-	boolean InsertOrder(StorageModel.StorageModel.ReplenishmentModel order);
+	boolean InsertOrder(ReplenishmentModel order);
 
 	/**
 	 * 

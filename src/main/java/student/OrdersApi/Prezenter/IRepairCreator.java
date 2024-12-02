@@ -1,4 +1,4 @@
-package OrdersApi.Prezenter;
+package student.OrdersApi.Prezenter;
 
 public interface IRepairCreator {
 
@@ -6,6 +6,6 @@ public interface IRepairCreator {
 	 * 
 	 * @param device
 	 */
-	IRepairModel CreateRepair(IDeviceModel device);
+	OrdersApiModel.OrdersApiModel.IRepairModel CreateRepair(OrdersApiModel.OrdersApiModel.IDeviceModel device);
 
 }

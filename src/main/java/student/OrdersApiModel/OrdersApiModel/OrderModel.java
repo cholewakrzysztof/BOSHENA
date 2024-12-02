@@ -1,10 +1,12 @@
 package OrdersApiModel.OrdersApiModel;
 
-public class OrderModel implements IOrderModel {
+import java.util.Date;
 
-	private OrderStatus Status;
+public class OrderModel implements OrdersApiModel.OrdersApiModel.IOrderModel {
+
+	private OrdersApiModel.OrdersApiModel.OrderStatus Status;
 	private int WorkerId;
 	private int[] RepairId;
-	private DateTime StartDate;
+	private Date StartDate;
 
 }

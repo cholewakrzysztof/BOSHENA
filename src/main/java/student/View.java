@@ -1,9 +1,11 @@
-import MainPrezenter.*;
+package student;
+
+import student.IInventoryClient;
 
 public class View {
 
-	private IWorkerFacade workerFacade;
-	private IOrderFacade orderFacade;
+	private MainPrezenter.IWorkerFacade workerFacade;
+	private MainPrezenter.IOrderFacade orderFacade;
 	private IInventoryClient inventoryClient;
 
 }

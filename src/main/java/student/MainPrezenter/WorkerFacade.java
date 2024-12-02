@@ -8,7 +8,7 @@ public class WorkerFacade implements IOrderFacade {
 	 * 
 	 * @param workerId
 	 */
-	public IWorkerModel GetWorker(int workerId) {
+	public WorkerApiModel.WorkersApiModel.IWorkerModel GetWorker(int workerId) {
 		// TODO - implement WorkerFacade.GetWorker
 		throw new UnsupportedOperationException();
 	}

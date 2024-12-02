@@ -1,4 +1,4 @@
-package OrdersApi;
+package student.OrdersApi;
 
 public interface IRepairState {
 
@@ -6,7 +6,7 @@ public interface IRepairState {
 	 * 
 	 * @param repair
 	 */
-	bool InsertRepair(IRepair repair);
+	boolean InsertRepair(IRepair repair);
 
 	/**
 	 * 

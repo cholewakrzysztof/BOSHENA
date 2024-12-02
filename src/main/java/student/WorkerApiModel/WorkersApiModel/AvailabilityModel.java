@@ -1,10 +1,12 @@
-package WorkerApiModel.WorkersApiModel;
+package student.WorkerApiModel.WorkersApiModel;
 
-public class AvailabilityModel implements IAvailabilityModel {
+import java.util.Date;
+
+public class AvailabilityModel implements WorkerApiModel.WorkersApiModel.IAvailabilityModel {
 
 	private int WorkerId;
-	private date From;
-	private date To;
-	private Availability Type;
+	private Date From;
+	private Date To;
+	private WorkerApiModel.WorkersApiModel.Availability Type;
 
 }
