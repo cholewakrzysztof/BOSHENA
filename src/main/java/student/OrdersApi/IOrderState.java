@@ -18,11 +18,11 @@ public interface IOrderState {
 	 * 
 	 * @param orderId
 	 */
-	IOrderModel GetOrderById(int orderId);
+	OrdersApiModel.OrdersApiModel.IOrderModel GetOrderById(int orderId);
 
 	/**
 	 * 
 	 * @param orderId
 	 */
-	IOrderModel DeleteOrder(int orderId);
+	OrdersApiModel.OrdersApiModel.IOrderModel DeleteOrder(int orderId);
 }

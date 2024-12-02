@@ -1,11 +1,12 @@
 package student;
 
-import student.IInventoryClient;
+import student.MainPrezenter.IOrderFacade;
+import student.MainPrezenter.IWorkerFacade;
 
 public class View {
 
-	private MainPrezenter.IWorkerFacade workerFacade;
-	private MainPrezenter.IOrderFacade orderFacade;
+	private IWorkerFacade workerFacade;
+	private IOrderFacade orderFacade;
 	private IInventoryClient inventoryClient;
 
 }

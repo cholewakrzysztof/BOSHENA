@@ -1,12 +1,14 @@
 package student;
 
+import student.StorageModel.StorageModel.ItemModel;
+
 public interface IInventoryClient {
 
 	/**
 	 * 
 	 * @param partsList
 	 */
-	void UpdateData(StorageModel.StorageModel.ItemModel[] partsList);
+	void UpdateData(ItemModel[] partsList);
 
 	void RecoverBackup();
 
@@ -16,7 +18,7 @@ public interface IInventoryClient {
 	 * 
 	 * @param partID
 	 */
-	StorageModel.StorageModel.ItemModel ShowPart(int partID);
+	ItemModel ShowPart(int partID);
 
 	void ApplyFilter();
 

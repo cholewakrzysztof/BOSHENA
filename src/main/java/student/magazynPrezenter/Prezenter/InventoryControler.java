@@ -1,16 +1,17 @@
 package student.magazynPrezenter.Prezenter;
 
 import student.IInventoryClient;
+import student.StorageModel.StorageModel.ItemModel;
 
 public class InventoryControler implements IInventoryClient {
 
-	private magazynPrezenter.Prezenter.ItemService itemService;
+	private ItemService itemService;
 
 	/**
 	 * 
 	 * @param partsList
 	 */
-	public void UpdateData(StorageModel.StorageModel.ItemModel[] partsList) {
+	public void UpdateData(ItemModel[] partsList) {
 		// TODO - implement InventoryControler.UpdateData
 		throw new UnsupportedOperationException();
 	}
@@ -29,7 +30,7 @@ public class InventoryControler implements IInventoryClient {
 	 * 
 	 * @param partID
 	 */
-	public StorageModel.StorageModel.ItemModel ShowPart(int partID) {
+	public ItemModel ShowPart(int partID) {
 		// TODO - implement InventoryControler.ShowPart
 		throw new UnsupportedOperationException();
 	}

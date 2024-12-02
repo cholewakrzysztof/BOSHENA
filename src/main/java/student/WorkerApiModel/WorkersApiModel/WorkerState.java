@@ -1,10 +1,13 @@
-package WorkerApiModel.WorkersApiModel;
+package student.WorkerApiModel.WorkersApiModel;
 
-import WorkerApiModel.*;
+import student.OrdersApiModel.OrdersApiModel.State;
+import student.WorkerApiModel.IWorkerState;
+
+import java.sql.Connection;
 
 public class WorkerState implements IWorkerState, State {
 
-	private IWorkerModel[] Workers;
+	private WorkerApiModel.WorkersApiModel.IWorkerModel[] Workers;
 
 	public WorkerState GetState() {
 		// TODO - implement WorkerState.GetState
@@ -16,4 +19,33 @@ public class WorkerState implements IWorkerState, State {
 		throw new UnsupportedOperationException();
 	}
 
+	@Override
+	public boolean InsertWorker(WorkerApiModel.WorkersApiModel.IWorkerModel worker) {
+		return false;
+	}
+
+	@Override
+	public int UpdateWorker(WorkerApiModel.WorkersApiModel.IWorkerModel worker) {
+		return 0;
+	}
+
+	@Override
+	public WorkerApiModel.WorkersApiModel.IWorkerModel GetWorkerById(int workerId) {
+		return null;
+	}
+
+	@Override
+	public WorkerApiModel.WorkersApiModel.IWorkerModel DeleteWorker(int workerId) {
+		return null;
+	}
+
+	@Override
+	public boolean Disconnect() {
+		return false;
+	}
+
+	@Override
+	public Connection Connect() {
+		return null;
+	}
 }

@@ -1,6 +1,7 @@
 package student.magazynPrezenter.Prezenter;
 
 import student.StorageModel.StorageModel.IReplenishmentModel;
+import student.StorageModel.StorageModel.ReplenishmentModel;
 
 public class ReplenishmentControler implements IReplenishmentModel {
 
@@ -15,7 +16,7 @@ public class ReplenishmentControler implements IReplenishmentModel {
 	}
 
 	@Override
-	public boolean InsertOrder(StorageModel.StorageModel.ReplenishmentModel order) {
+	public boolean InsertOrder(ReplenishmentModel order) {
 		return false;
 	}
 

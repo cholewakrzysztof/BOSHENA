@@ -1,21 +1,13 @@
-package MainPrezenter;
+package student.MainPrezenter;
 
-import OrdersApiModel.OrdersApiModel.*;
 
 public class OrderFacade implements IWorkerFacade {
 
 	private OrderCreation OrderCreation;
 
-	/**
-	 * 
-	 * @param device
-	 * @param order
-	 * @param workerId
-	 * @param clientId
-	 */
-	public IOrderModel CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId) {
-		// TODO - implement OrderFacade.CreateOrder
-		throw new UnsupportedOperationException();
-	}
 
+	@Override
+	public OrdersApiModel.OrdersApiModel.IOrderModel CreateOrder(OrdersApiModel.OrdersApiModel.IDeviceModel device, OrdersApiModel.OrdersApiModel.IOrderModel order, int workerId, int clientId) {
+		return null;
+	}
 }

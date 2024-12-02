@@ -1,6 +1,4 @@
-package WorkersApiPrezenter;
-
-import WorkerApiModel.WorkersApiModel.*;
+package student.WorkersApiPrezenter;
 
 public interface IWorkersClient {
 
@@ -8,19 +6,19 @@ public interface IWorkersClient {
 	 * 
 	 * @param worker
 	 */
-	WorkersApi.IWorkerModel CreateNewWorker(IWorkerModel worker);
+	WorkerApiModel.WorkersApiModel.IWorkerModel CreateNewWorker(WorkerApiModel.WorkersApiModel.IWorkerModel worker);
 
 	/**
 	 * 
 	 * @param workerId
 	 */
-	IWorkerModel GetWorker(int workerId);
+	WorkerApiModel.WorkersApiModel.IWorkerModel GetWorker(int workerId);
 
 	/**
 	 * 
 	 * @param worek
 	 * @param availability
 	 */
-	boolean ChangeAvailability(IWorkerModel worek, IAvailabilityModel availability);
+	boolean ChangeAvailability(WorkerApiModel.WorkersApiModel.IWorkerModel worek, WorkerApiModel.WorkersApiModel.IAvailabilityModel availability);
 
 }

@@ -1,8 +1,11 @@
-package MainPrezenter;
+package student.MainPrezenter;
+
+import OrdersApiModel.OrdersApiModel.IDeviceModel;
+import OrdersApiModel.OrdersApiModel.IOrderModel;
 
 public class WorkerFacade implements IOrderFacade {
 
-	private WorkerService workerService;
+	private MainPrezenter.WorkerService workerService;
 
 	/**
 	 * 
@@ -13,12 +16,17 @@ public class WorkerFacade implements IOrderFacade {
 		throw new UnsupportedOperationException();
 	}
 
+	@Override
+	public IOrderModel CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId) {
+		return null;
+	}
+
 	/**
 	 * 
 	 * @param worek
 	 * @param availability
 	 */
-	public boolean ChangeAvailability(IWorkerModel worek, IAvailabilityModel availability) {
+	public boolean ChangeAvailability(WorkerApiModel.WorkersApiModel.IWorkerModel worek, WorkerApiModel.WorkersApiModel.IAvailabilityModel availability) {
 		// TODO - implement WorkerFacade.ChangeAvailability
 		throw new UnsupportedOperationException();
 	}

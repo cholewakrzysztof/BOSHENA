@@ -1,7 +1,5 @@
-package MainPrezenter;
+package student.MainPrezenter;
 
-import WorkerApiModel.WorkersApiModel.*;
-import OrdersApiModel.OrdersApiModel.*;
 
 public interface IOrderFacade {
 
@@ -10,13 +8,13 @@ public interface IOrderFacade {
 	 * @param worek
 	 * @param availability
 	 */
-	boolean ChangeAvailability(IWorkerModel worek, IAvailabilityModel availability);
+	boolean ChangeAvailability(WorkerApiModel.WorkersApiModel.IWorkerModel worek, WorkerApiModel.WorkersApiModel.IAvailabilityModel availability);
 
 	/**
 	 * 
 	 * @param workerId
 	 */
-	IWorkerModel GetWorker(int workerId);
+	WorkerApiModel.WorkersApiModel.IWorkerModel GetWorker(int workerId);
 
 	/**
 	 * 
@@ -25,6 +23,6 @@ public interface IOrderFacade {
 	 * @param workerId
 	 * @param clientId
 	 */
-	IOrderModel CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId);
+	OrdersApiModel.OrdersApiModel.IOrderModel CreateOrder(OrdersApiModel.OrdersApiModel.IDeviceModel device, OrdersApiModel.OrdersApiModel.IOrderModel order, int workerId, int clientId);
 
 }

@@ -1,6 +1,5 @@
-package MainPrezenter;
+package student.MainPrezenter;
 
-import OrdersApiModel.OrdersApiModel.*;
 
 public class OrderCreation {
 
@@ -13,7 +12,7 @@ public class OrderCreation {
 	 * @param workerId
 	 * @param clientId
 	 */
-	public IOrderModel CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId) {
+	public OrdersApiModel.OrdersApiModel.IOrderModel CreateOrder(OrdersApiModel.OrdersApiModel.IDeviceModel device, OrdersApiModel.OrdersApiModel.IOrderModel order, int workerId, int clientId) {
 		// TODO - implement OrderCreation.CreateOrder
 		throw new UnsupportedOperationException();
 	}

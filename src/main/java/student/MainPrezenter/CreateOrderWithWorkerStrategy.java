@@ -1,6 +1,4 @@
-package MainPrezenter;
-
-import OrdersApiModel.OrdersApiModel.*;
+package student.MainPrezenter;
 
 public class CreateOrderWithWorkerStrategy implements ICreateOrderStrategy {
 
@@ -8,7 +6,7 @@ public class CreateOrderWithWorkerStrategy implements ICreateOrderStrategy {
 	 * 
 	 * @param workerId
 	 */
-	private IWorketModel GetWorker(int workerId) {
+	private WorkerApiModel.WorkersApiModel.IWorkerModel GetWorker(int workerId) {
 		// TODO - implement CreateOrderWithWorkerStrategy.GetWorker
 		throw new UnsupportedOperationException();
 	}
@@ -18,7 +16,7 @@ public class CreateOrderWithWorkerStrategy implements ICreateOrderStrategy {
 	 * @param worek
 	 * @param availability
 	 */
-	private boolean ChangeAvailability(IWorkerModel worek, IAvailabilityModel availability) {
+	private boolean ChangeAvailability(WorkerApiModel.WorkersApiModel.IWorkerModel worek, WorkerApiModel.WorkersApiModel.IAvailabilityModel availability) {
 		// TODO - implement CreateOrderWithWorkerStrategy.ChangeAvailability
 		throw new UnsupportedOperationException();
 	}
@@ -27,7 +25,7 @@ public class CreateOrderWithWorkerStrategy implements ICreateOrderStrategy {
 	 * 
 	 * @param order
 	 */
-	private IAvailabilityModel CreateAvailability(IOrderModel order) {
+	private WorkerApiModel.WorkersApiModel.IAvailabilityModel CreateAvailability(OrdersApiModel.OrdersApiModel.IOrderModel order) {
 		// TODO - implement CreateOrderWithWorkerStrategy.CreateAvailability
 		throw new UnsupportedOperationException();
 	}
@@ -39,7 +37,7 @@ public class CreateOrderWithWorkerStrategy implements ICreateOrderStrategy {
 	 * @param workerId
 	 * @param clientId
 	 */
-	public IOrderModel CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId) {
+	public OrdersApiModel.OrdersApiModel.IOrderModel CreateOrder(OrdersApiModel.OrdersApiModel.IDeviceModel device, OrdersApiModel.OrdersApiModel.IOrderModel order, int workerId, int clientId) {
 		// TODO - implement CreateOrderWithWorkerStrategy.CreateOrder
 		throw new UnsupportedOperationException();
 	}

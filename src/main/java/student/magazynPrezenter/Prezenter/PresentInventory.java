@@ -1,6 +1,6 @@
-package magazynPrezenter.Prezenter;
+package student.magazynPrezenter.Prezenter;
 
-import StorageModel.StorageModel.*;
+import student.StorageModel.StorageModel.ItemModel;
 
 public class PresentInventory {
 

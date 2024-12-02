@@ -1,6 +1,5 @@
-package MainPrezenter;
+package student.MainPrezenter;
 
-import OrdersApiModel.OrdersApiModel.*;
 
 public interface ICreateOrderStrategy {
 
@@ -11,6 +10,6 @@ public interface ICreateOrderStrategy {
 	 * @param workerId
 	 * @param clientId
 	 */
-	IOrderModel CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId);
+	OrdersApiModel.OrdersApiModel.IOrderModel CreateOrder(OrdersApiModel.OrdersApiModel.IDeviceModel device, OrdersApiModel.OrdersApiModel.IOrderModel order, int workerId, int clientId);
 
 }

@@ -6,12 +6,12 @@ public interface IRepairState {
 	 * 
 	 * @param repair
 	 */
-	boolean InsertRepair(IRepair repair);
+	boolean InsertRepair(OrdersApi.Prezenter.IRepairModel repair);
 
 	/**
 	 * 
 	 * @param repair
 	 */
-	int UpdateRepair(IRepair repair);
+	int UpdateRepair(OrdersApi.Prezenter.IRepairModel repair);
 
 }

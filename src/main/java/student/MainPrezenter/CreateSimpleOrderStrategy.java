@@ -1,19 +1,13 @@
-package MainPrezenter;
+package student.MainPrezenter;
 
-import OrdersApiModel.OrdersApiModel.*;
+import OrdersApiModel.OrdersApiModel.IDeviceModel;
+import OrdersApiModel.OrdersApiModel.IOrderModel;
+import student.MainPrezenter.ICreateOrderStrategy;
 
 public class CreateSimpleOrderStrategy implements ICreateOrderStrategy {
 
-	/**
-	 * 
-	 * @param device
-	 * @param order
-	 * @param workerId
-	 * @param clientId
-	 */
+	@Override
 	public IOrderModel CreateOrder(IDeviceModel device, IOrderModel order, int workerId, int clientId) {
-		// TODO - implement CreateSimpleOrderStrategy.CreateOrder
-		throw new UnsupportedOperationException();
+		return null;
 	}
-
 }

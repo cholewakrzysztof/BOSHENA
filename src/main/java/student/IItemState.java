@@ -1,6 +1,7 @@
 package student;
 
 import student.StorageModel.StorageModel.IItemModel;
+import student.StorageModel.StorageModel.ItemModel;
 
 public interface IItemState {
 
@@ -16,5 +17,5 @@ public interface IItemState {
 	 */
 	int UpdateItem(IItemModel item);
 
-	StorageModel.StorageModel.ItemModel[] SelectItemsToDisplay();
+	ItemModel[] SelectItemsToDisplay();
 }

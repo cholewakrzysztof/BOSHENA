@@ -1,17 +1,17 @@
-package WorkersApiPrezenter.WorkersApi;
+package student.WorkersApiPrezenter.WorkersApi;
 
-import WorkersApi.*;
+import student.WorkerApiModel.IAvailabilityState;
 
 public class AvailabilityService {
 
 	private AvailabilityCreator AvailabilityCreator;
-	private IAvailabilityStatee AvailabilityState;
+	private IAvailabilityState AvailabilityState;
 
 	/**
 	 * 
 	 * @param IAvailabilityModel
 	 */
-	private IAvailabilityModel CreateNewAvailability(int IAvailabilityModel) {
+	private WorkerApiModel.WorkersApiModel.IAvailabilityModel CreateNewAvailability(int IAvailabilityModel) {
 		// TODO - implement AvailabilityService.CreateNewAvailability
 		throw new UnsupportedOperationException();
 	}
@@ -21,7 +21,7 @@ public class AvailabilityService {
 	 * @param WorkerId
 	 * @param availability
 	 */
-	public boolean ChangeAvailability(integer WorkerId, IAvailability availability) {
+	public boolean ChangeAvailability(int WorkerId, WorkerApiModel.WorkersApiModel.IAvailabilityModel availability) {
 		// TODO - implement AvailabilityService.ChangeAvailability
 		throw new UnsupportedOperationException();
 	}
