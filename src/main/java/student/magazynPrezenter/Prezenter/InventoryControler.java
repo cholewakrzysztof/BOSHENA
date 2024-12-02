@@ -5,7 +5,7 @@ import student.StorageModel.StorageModel.ItemModel;
 
 public class InventoryControler implements IInventoryClient {
 
-	private ItemService itemService;
+	private ItemService itemService = new ItemService();
 
 	/**
 	 * 
@@ -22,8 +22,8 @@ public class InventoryControler implements IInventoryClient {
 	}
 
 	public void ShowAll() {
-		// TODO - implement InventoryControler.ShowAll
-		throw new UnsupportedOperationException();
+		itemService.ShowAll();
+		//throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -31,7 +31,6 @@ public class InventoryControler implements IInventoryClient {
 	 * @param partID
 	 */
 	public ItemModel ShowPart(int partID) {
-		// TODO - implement InventoryControler.ShowPart
 		throw new UnsupportedOperationException();
 	}
 
